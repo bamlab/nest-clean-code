@@ -1,0 +1,5 @@
+{
+  "typescript.validate.enable": true,
+  "editor.formatOnSave": true,
+  "javascript.suggestionActions.enabled": false
+}

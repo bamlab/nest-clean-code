@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "allowJs": true,
+    "checkJs": true,
+    "paths": {
+      "@app/api-gateway": [
+        "apps/api-gateway/src"
+      ],
+      "@app/api-gateway/*": [
+        "apps/api-gateway/src/*"
+      ],
+      "@lib/cats": [
+        "libs/lib-cats/src"
+      ],
+      "@lib/cats/*": [
+        "libs/lib-cats/src/*"
+      ],
+      "@utils": [
+        "libs/utils/src"
+      ],
+      "@utils/*": [
+        "libs/utils/src/*"
+      ],
+      "@lib/dogs": [
+        "libs/lib-dogs/src"
+      ],
+      "@lib/dogs/*": [
+        "libs/lib-dogs/src/*"
+      ]
+    }
+  }
+}

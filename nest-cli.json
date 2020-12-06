@@ -1,0 +1,39 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/api-gateway/src",
+  "monorepo": true,
+  "root": "apps/api-gateway",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+  },
+  "projects": {
+    "api-gateway": {
+      "type": "application",
+      "root": "apps/api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+      }
+    },
+    "lib-cats": {
+      "type": "library",
+      "root": "libs/lib-cats",
+      "entryFile": "index",
+      "sourceRoot": "libs/lib-cats/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/lib-cats/tsconfig.lib.json"
+      }
+    },
+    "lib-dogs": {
+      "type": "library",
+      "root": "libs/lib-dogs",
+      "entryFile": "index",
+      "sourceRoot": "libs/lib-dogs/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/lib-dogs/tsconfig.lib.json"
+      }
+    }
+  }
+}
