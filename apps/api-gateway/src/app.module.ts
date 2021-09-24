@@ -5,7 +5,7 @@ import { TerminusModule } from '@nestjs/terminus';
 
 // Imports from Gateway
 import { configSchema } from '@app/api-gateway/config/schema';
-import { CatsAPIControllerV1 } from '@app/api-gateway/api/v1/cats.controller';
+
 import { DogsAPIControllerV1 } from '@app/api-gateway/api/v1/dogs.controller';
 
 // Imports from libs/libs
@@ -19,6 +19,7 @@ import * as pg from 'pg';
 import * as pgInterval from 'postgres-interval';
 
 import { Duration } from 'luxon';
+import { CatsAPIControllerV1 } from './api/cats/v1/cats.controller';
 
 pg.types.setTypeParser(pg.types.builtins.INTERVAL, (value) => {
   // This returns the long iso string: eg P0Y0M3DT0H0M0S

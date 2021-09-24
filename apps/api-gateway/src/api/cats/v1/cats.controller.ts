@@ -11,7 +11,7 @@ import { map } from 'fp-ts/lib/TaskEither';
 import { CatPresenter } from 'libs/lib-cats/src/infra/presenter/cats.presenter';
 
 // Import from "api-gateway"
-import { CatListResponseDto } from '@app/api-gateway/api/dtos/cats.dtos';
+import { CatListResponseDto } from '@app/api-gateway/api/cats/v1/cats.dtos';
 
 @ApiTags('Cats')
 @Controller()
