@@ -6,7 +6,7 @@ import { TerminusModule } from '@nestjs/terminus';
 // Imports from Gateway
 import { configSchema } from '@app/api-gateway/config/schema';
 
-import { DogsAPIControllerV1 } from '@app/api-gateway/api/v1/dogs.controller';
+import { DogsAPIControllerV1 } from '@app/api-gateway/api/dogs/v1/dogs.controller';
 
 // Imports from libs/libs
 import { CatsModule } from 'libs/lib-cats/src/cats.module';

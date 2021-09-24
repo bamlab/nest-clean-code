@@ -6,7 +6,7 @@ import { ApiTags, ApiOkResponse, ApiOperation } from '@nestjs/swagger';
 import { DogPresenter } from 'libs/lib-dogs/src/infra/presenter/dogs.presenter';
 
 // Import from "api-gateway"
-import { DogListResponseDto } from '@app/api-gateway/api/dtos/dogs.dtos';
+import { DogListResponseDto } from '@app/api-gateway/api/dogs/v1/dogs.dtos';
 
 @ApiTags('Dogs')
 @Controller()
